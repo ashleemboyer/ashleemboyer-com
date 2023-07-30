@@ -1,0 +1,12 @@
+:root {
+  /* colors */
+  --indigo-dye: #08415c;
+  --rifle-green: #474a2c;
+  --dark-sienna: #4c212a;
+  --dark-sea-green: #abc798;
+  --tumbleweed: #f1ab86;
+}
+
+html {
+  background-color: var(--indigo-dye);
+}

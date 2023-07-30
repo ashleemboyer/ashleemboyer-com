@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import "./global.css";
 
 const SITE_LINKS = [
   { href: "/about", text: "about" },
