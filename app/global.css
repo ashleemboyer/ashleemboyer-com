@@ -9,4 +9,9 @@
 
 html {
   background-color: var(--indigo-dye);
+  color: var(--tumbleweed);
+}
+
+a {
+  color: var(--tumbleweed);
 }
