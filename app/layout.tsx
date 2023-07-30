@@ -33,6 +33,14 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           </nav>
         </header>
         <div>{children}</div>
+        <footer>
+          <p>© 2023 Ashlee M Boyer</p>
+          <p>
+            <a href="https://github.com/ashleemboyer/ashleemboyer-com-issues-and-questions/issues/new/choose">
+              Report an issue or ask a question
+            </a>
+          </p>
+        </footer>
       </body>
     </html>
   );
