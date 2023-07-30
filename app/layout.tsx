@@ -16,6 +16,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <body>
+        {/* TODO move header element to separate component */}
         <header>
           <a href="/">
             <img alt="home" src="amb.svg" height="48" width="auto" />
@@ -33,6 +34,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           </nav>
         </header>
         <div>{children}</div>
+        {/* TODO move footer element to separate component */}
         <footer>
           <p>© 2023 Ashlee M Boyer</p>
           <p>
