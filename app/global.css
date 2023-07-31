@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&display=swap");
+
 :root {
   /* colors */
   --indigo-dye: #08415c;
@@ -5,6 +7,11 @@
   --dark-sienna: #4c212a;
   --dark-sea-green: #abc798;
   --tumbleweed: #f1ab86;
+
+  /* typography */
+  --font-family-heading: "Titan One", cursive;
+  --font-family-body: "Lato", sans-serif;
+  --font-family-mono: "Roboto Mono", monospace;
 }
 
 html {
@@ -12,10 +19,46 @@ html {
   color: var(--tumbleweed);
 }
 
+/*
+***
+* Typography
+***
+*/
+
 body {
+  font-family: var(--font-family-body);
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  line-height: 1.1;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 a {
-  color: var(--tumbleweed);
+  color: inherit;
+}
+
+code,
+pre {
+  font-family: var(--font-family-mono);
 }
