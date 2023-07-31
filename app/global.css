@@ -12,6 +12,10 @@ html {
   color: var(--tumbleweed);
 }
 
+body {
+  margin: 0;
+}
+
 a {
   color: var(--tumbleweed);
 }
