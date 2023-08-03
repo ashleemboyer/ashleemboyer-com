@@ -1,0 +1,70 @@
+.section {
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  border-radius: 12px;
+  border: 2px solid var(--tumbleweed);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.postTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.postTitle:hover {
+  text-decoration: underline;
+}
+
+.postDate,
+.readTime {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.375;
+  margin: 0;
+}
+
+.readTime {
+  font-style: italic;
+}
+
+.cta {
+  border-radius: 6px;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 64px;
+  padding: 10px;
+  width: fit-content;
+}
+
+.cta:hover,
+.cta:focus {
+  border: 2px dashed var(--tumbleweed);
+  outline: none;
+  padding: 8px;
+}
