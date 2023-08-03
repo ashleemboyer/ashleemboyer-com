@@ -1,4 +1,4 @@
-import { PageTitleGroup } from './components';
+import { PageTitleGroup, PostListSection } from './components';
 
 const RECOMMENDED_WRITINGS = [
   {
@@ -62,37 +62,15 @@ const Page = () => {
         title="Ashlee M Boyer"
         subtitle="Disabled & Neurodivergent Software Engineer and Web Accessibility Expert"
       />
-
-      <section>
-        <h2>Recommended writings</h2>
-        <ul>
-          {RECOMMENDED_WRITINGS.map(({ href, title, date, readTime }) => {
-            return (
-              <li>
-                <a href={href}>{title}</a>
-                <p>Posted {date}</p>
-                <p>{readTime}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-
-      <section>
-        <h2>Most recent writings</h2>
-        <ul>
-          {MOST_RECENT_WRITINGS.map(({ href, title, date, readTime }) => {
-            return (
-              <li>
-                <a href={href}>{title}</a>
-                <p>Posted {date}</p>
-                <p>{readTime}</p>
-              </li>
-            );
-          })}
-          <a href="/blog">read all posts</a>
-        </ul>
-      </section>
+      <PostListSection
+        title="Recommended writings"
+        posts={RECOMMENDED_WRITINGS}
+      />
+      <PostListSection
+        title="Most recent writings"
+        posts={MOST_RECENT_WRITINGS}
+        cta={{ text: 'Read all posts', href: '/blog' }}
+      />
     </>
   );
 };
