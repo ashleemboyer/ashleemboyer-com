@@ -1,3 +1,4 @@
+import { IconArrowRight } from 'components';
 import s from './post-list-section.module.css';
 
 /**
@@ -41,6 +42,7 @@ const PostListSection = ({ title, posts, cta }: PostListSectionProps) => {
       {cta ? (
         <a className={s.cta} href={cta.href}>
           {cta.text}
+          <IconArrowRight />
         </a>
       ) : null}
     </section>
