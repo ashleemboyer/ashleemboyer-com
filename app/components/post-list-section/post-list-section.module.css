@@ -13,6 +13,7 @@
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-auto-rows: 1fr;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -63,10 +64,21 @@
   font-size: 1.5rem;
   font-weight: 300;
 }
-
 .cta:hover,
 .cta:focus {
   border: 2px dashed var(--tumbleweed);
   outline: none;
   padding: 8px;
+}
+
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: 2rem;
+    line-ight: 1.25;
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    margin-top: 40px;
+  }
 }

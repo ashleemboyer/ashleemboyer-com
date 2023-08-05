@@ -3,7 +3,8 @@
   border-bottom: 2px solid var(--tumbleweed);
   display: flex;
   flex-wrap: wrap;
-  gap: 48px;
+  column-gap: 48px;
+  row-gap: 24px;
   padding-bottom: 16px;
   margin-bottom: 120px;
 }
