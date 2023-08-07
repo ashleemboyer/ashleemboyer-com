@@ -1,4 +1,7 @@
 import { ReactNode } from "react";
+import { SiteFooter, SiteHeader } from "./components";
+import "./global.css";
+import s from "./root-layout.module.css";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -7,7 +10,11 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={s.body}>
+        <SiteHeader />
+        <div>{children}</div>
+        <SiteFooter />
+      </body>
     </html>
   );
 };

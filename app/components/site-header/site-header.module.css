@@ -1,0 +1,49 @@
+.header {
+  align-items: center;
+  border-bottom: 2px solid var(--tumbleweed);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 48px;
+  row-gap: 24px;
+  padding-bottom: 16px;
+  margin-bottom: 120px;
+}
+
+.homeLink {
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.homeLink:hover,
+.homeLink:focus {
+  border: 2px dashed var(--tumbleweed);
+  outline: transparent;
+  padding: 8px;
+}
+
+.navList {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navListLink {
+  border: none;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navListLink:hover,
+.navListLink:focus {
+  border: 2px dashed var(--tumbleweed);
+  outline: transparent;
+  padding: 8px;
+}

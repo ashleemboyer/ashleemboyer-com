@@ -1,0 +1,99 @@
+.section {
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: grid;
+  gap: 24px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  border-radius: 12px;
+  border: 2px solid var(--tumbleweed);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.postTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.postTitle:hover {
+  text-decoration: underline;
+}
+
+.postDate,
+.readTime {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.375;
+  margin: 0;
+}
+
+.readTime {
+  font-style: italic;
+}
+
+.cta {
+  align-items: center;
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 64px;
+  padding: 10px;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.cta:hover,
+.cta:focus {
+  border: 2px dashed var(--tumbleweed);
+  outline: none;
+  padding: 8px;
+}
+
+/* @TODO: add custom media for breakpoints */
+@media only screen and (max-width: 1000px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @TODO: add custom media for breakpoints */
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: 2rem;
+    line-ight: 1.25;
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    margin-top: 40px;
+  }
+}
+
+/* @TODO: add custom media for breakpoints */
+@media only screen and (max-width: 550px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
