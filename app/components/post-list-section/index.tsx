@@ -1,15 +1,6 @@
-import { IconArrowRight } from 'components';
-import s from './post-list-section.module.css';
-
-/**
- * @TODO abstract and clean up this type
- */
-interface Post {
-  href: string;
-  title: string;
-  date: string;
-  readTime: string;
-}
+import { type Post } from "types";
+import { IconArrowRight } from "components";
+import s from "./post-list-section.module.css";
 
 interface PostListSectionProps {
   cta?: {
