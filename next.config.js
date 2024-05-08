@@ -4,7 +4,7 @@ module.exports = {
       {
         source: '/',
         destination: 'https://ashleemboyer.com',
-        permanent: true,
+        permanent: false,
       },
     ]
   },
